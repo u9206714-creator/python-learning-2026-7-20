@@ -54,20 +54,35 @@ print(f'本次运费为{money}元')
 '''
 
 #4、计算手机电量状态
+'''
+def battery_status(power):
+    if power >= 80:
+        status = 'enough'
+    elif power >= 50:
+        status = 'normal'
+    elif power >= 20:
+        status = 'a bit low'
+    else:
+        status = 'please charge your phone now'
+    print(f'your battery power is {power}%')
+    return status
+electricity = battery_status(71) 
+print(f'your battery status is {electricity}')
+'''
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+#5、购物结算
+def discount(price, vip):
+    if vip == False:
+        final_price = price 
+    elif vip == True and price >= 200:
+        final_price = price*0.8
+    elif vip == True and 0 < price <= 200:
+        final_price = price*0.9
+    else:
+        final_price = 'this is a wrong number' 
+    return final_price
+result = discount(483,True)
+print(f'优惠后的价格为{result}')
 
 
 
