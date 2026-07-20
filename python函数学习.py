@@ -71,6 +71,7 @@ print(f'your battery status is {electricity}')
 '''
 
 #5、购物结算
+'''
 def discount(price, vip):
     if vip == False:
         final_price = price 
@@ -83,7 +84,7 @@ def discount(price, vip):
     return final_price
 result = discount(483,True)
 print(f'优惠后的价格为{result}')
-
+'''
 
 
 
